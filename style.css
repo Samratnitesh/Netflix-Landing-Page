@@ -142,22 +142,23 @@ nav button {
   padding-bottom: 60px;
 }
 
+
 .secImg{
   position: relative;
   top: 10px;
 }
 .secImg img{
-  width: 35vw;
+  width: 455px;
   position: relative;
   z-index: 10;
 }
 
 .secImg video{
   position: absolute;
-  width: 27vw;
-  top: 61px;
-  right: 0px;
-  left: 60px;
+  top: 55px;
+  right: 0;
+  width: 350px;
+  left: 43px;
 }
 
 .first > div :nth-child(1){
@@ -175,10 +176,10 @@ nav button {
 
 .third .secImg video{
   position: absolute;
-  width: 22vw;
-  top: 37px;
-  right: 0px;
-  left: 75px;
+  top: 51px;
+  right: 0;
+  left: 78px;
+  width: 280px;
 }
 
 .faq h2{
@@ -234,7 +235,7 @@ footer{
 }
 
 footer span{
-  max-width: 60vw;
+  max-width: 70vw;
   text-align: center;
   margin: auto;
   color: rgb(202, 201, 201);
@@ -266,4 +267,41 @@ a{
 }
 .btmnet{
   font-size: 14px;
+}
+
+@media screen and (max-width: 800px) {
+  .first{
+    flex-wrap: wrap;
+  }
+  .hero-buttons{
+    flex-wrap: wrap;
+  }
+
+  .btn-red{
+    padding: 2px 18px;
+    font-size: 15px;
+  }
+  .main{
+    height: 65vh;
+  }
+  .box{
+    height: 65vh;
+  }
+  .first div{
+    padding-bottom: 0;
+  }
+  .secImg{
+    top: 0;
+  }
+  .footer{
+    grid-template-columns: repeat(2, 1fr);
+    
+  }
+  .footer-item{
+    padding: 0;
+  }
+  .btm{
+    padding-top: 30px;
+  }
+  
 }
